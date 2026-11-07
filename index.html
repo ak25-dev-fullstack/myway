@@ -65,6 +65,9 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(22px, 4.6vw, 34px); letter-spacing: -0.01em; line-height: 1.15; }
 .lede { color: var(--muted); margin: 6px 0 0; max-width: 62ch; }
 .lede b { color: var(--ink); font-weight: 600; }
+.score-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 12px; padding: 8px 14px; min-height: 40px; border-radius: 10px; background: var(--accent-soft); color: var(--accent); border: 1px solid var(--line); font-weight: 600; text-decoration: none; }
+.score-link:hover { border-color: var(--accent); }
+.score-link small { font-weight: 500; color: var(--muted); }
 
 /* legend */
 .legend { display: grid; grid-template-columns: 1.3fr 1fr; gap: 14px; }
@@ -207,6 +210,7 @@ button, .seg label { font: inherit; }
   <header>
     <h1>Пьеса в фа мажоре по тактам</h1>
     <p class="lede">Каждый такт разобран так: <b>когда</b> нажимать (полоса времени), <b>какую клавишу</b> (клавиатура) и <b>каким пальцем</b> (число в кружке). Ноты названы буквами A–G. В ключе один бемоль, поэтому каждая B играется как <b>B♭</b>, пока не стоит бекар <b>B♮</b>. Левая рука здесь играет аккордами вместо ломаных арпеджио.</p>
+    <a class="score-link" href="score_block_chords.pdf" target="_blank" rel="noopener">📄 Ноты (PDF) <small>2 стр.</small></a>
   </header>
 
   <section class="legend" aria-label="Обозначения">
